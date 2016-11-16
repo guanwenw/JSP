@@ -27,7 +27,6 @@
         Welcome to Tomcat
     </description>
 
-
     <servlet>
         <servlet-name>HelloWorld</servlet-name>
         <servlet-class>HelloWorld</servlet-class>
@@ -36,5 +35,25 @@
     <servlet-mapping>
         <servlet-name>HelloWorld</servlet-name>
         <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayHeader</servlet-name>
+        <servlet-class>DisplayHeader</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisplayHeader</servlet-name>
+        <url-pattern>/DisplayHeader</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet Demo</servlet-name>
+        <servlet-class>com.demo.ServletDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet Demo</servlet-name>
+        <url-pattern>/result</url-pattern>
     </servlet-mapping>
 </web-app>
